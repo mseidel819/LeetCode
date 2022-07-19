@@ -15,19 +15,16 @@ var numberOfPairs = function(nums) {
 //if we alreay counted as the second of a pair
         if (toggler===true){
             toggler=false;
-            
         }else
 //if its a pair
         if(sorted[i]===sorted[i+1]){
             toggler=true;
-            pairCount+=1
-            
+            pairCount+=1  
         }else
         
     newArr.push(sorted[i]);
         
     }
-    const leftoverCount=newArr.length;
     
-  return [pairCount, leftoverCount]
+  return [pairCount, newArr.length]
 };
