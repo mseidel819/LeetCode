@@ -6,11 +6,9 @@
 var targetIndices = function(nums, target) {
     const answer=[];
     
-    const sorted=nums.sort((a,b)=>{
+    nums.sort((a,b)=>{
         return a-b;
-    })
-    
-    sorted.forEach((num,i)=>{
+    }).forEach((num,i)=>{
         if(num==target){
             answer.push(i)
         }
