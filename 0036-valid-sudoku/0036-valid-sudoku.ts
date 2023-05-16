@@ -13,6 +13,7 @@ for (let i = 0; i < board.length; i++)  {
       let testBox=board[3*Math.floor(i/3)+Math.floor(j/3)][3*(i%3)+(j%3)]
 
  
+      
       if(testCol !== "."){
           if (column.has(testCol)){
               return false
